@@ -17,7 +17,9 @@ const (
 <html>
 <head>
 <title>gowold</title>
-<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+<!-- <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css"> -->
+<!-- Download the CSS from a mirror as it's no available over HTTPS -->
+<link rel="stylesheet" href="https://pamhan.no-ip.org/files/pure/0.6.0/pure-min.css">
 <style type="text/css">
 #container {width:100%;height:100%;position:absolute;vertical-align:middle;text-align:center;}
 #centered {margin-left:auto;margin-right:auto;margin-top:20%;margin-bottom:auto;display:block;}
