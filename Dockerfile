@@ -7,7 +7,7 @@ FROM golang:${GO_VERSION}-alpine${ALPINE_VERSION} AS builder
 
 COPY . /go/src/github.com/jabbors/gowold
 WORKDIR /go/src/github.com/jabbors/gowold
-ARG APP_VERSION=0.1.1
+ARG APP_VERSION=0.2
 RUN go install -ldflags="-X \"main.version=${APP_VERSION}\""
 
 # final stage
