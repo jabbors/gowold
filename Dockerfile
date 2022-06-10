@@ -13,7 +13,6 @@ RUN go install -ldflags="-X \"main.version=${APP_VERSION}\""
 # final stage
 FROM alpine:${ALPINE_VERSION}
 
-RUN apk --no-cache add ca-certificates bash curl
 COPY --from=builder /usr/local/go/lib/time/zoneinfo.zip /usr/local/go/lib/time/zoneinfo.zip
 COPY --from=builder /go/bin/gowold /usr/bin/gowold
 USER nobody:nobody
