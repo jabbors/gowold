@@ -1,6 +1,6 @@
 # defaults which may be overridden from the build command
-ARG GO_VERSION=1.17
-ARG ALPINE_VERSION=3.15
+ARG GO_VERSION=1.18
+ARG ALPINE_VERSION=3.16
 
 # build stage
 FROM golang:${GO_VERSION}-alpine${ALPINE_VERSION} AS builder
